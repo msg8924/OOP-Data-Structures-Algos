@@ -12,7 +12,7 @@
 int main() {
   Cube c;
 
-  c.setLength(7);
+  c.setLength(6);
   double volume = c.getVolume();
   std::cout << "Volume: " << volume << std::endl;
 
