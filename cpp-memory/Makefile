@@ -14,5 +14,8 @@ foo: foo.cpp
 puzzle: puzzle.cpp
 	$(LD) $^ $(LDFLAGS) .objs/Cube.o -o $@
 
-all: addressOf foo puzzle
-CLEAN_RM += addressOf foo puzzle
+pointers: pointers.cpp 
+	$(LD) $^ $(LDFLAGS) -o $@
+
+all: addressOf foo puzzle pointers
+CLEAN_RM += addressOf foo puzzle pointers
